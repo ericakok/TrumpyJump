@@ -19,7 +19,7 @@ class EndGameScene: SKScene {
         super.init(size: size)
         
         // Stars
-        let star = SKSpriteNode(imageNamed: "Star")
+        let star = SKSpriteNode(imageNamed: "UberJumpGraphics/Assets.atlas/Star")
         star.position = CGPoint(x: 25, y: self.size.height-30)
         addChild(star)
         
