@@ -17,6 +17,7 @@
 		C0FF42991C668EE400F42C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FF42981C668EE400F42C88 /* Assets.xcassets */; };
 		C0FF429C1C668EE400F42C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FF429A1C668EE400F42C88 /* LaunchScreen.storyboard */; };
 		C0FF42A71C668EE400F42C88 /* TrumpJumpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF42A61C668EE400F42C88 /* TrumpJumpTests.swift */; };
+		FB954BC81C6722880058F429 /* China.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB954BC71C6722880058F429 /* China.wav */; };
 		FBFF63171C6707EC0020CE88 /* GameObjectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF63161C6707EC0020CE88 /* GameObjectNode.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		C0FF42A21C668EE400F42C88 /* TrumpJumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrumpJumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FF42A61C668EE400F42C88 /* TrumpJumpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrumpJumpTests.swift; sourceTree = "<group>"; };
 		C0FF42A81C668EE400F42C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB954BC71C6722880058F429 /* China.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = China.wav; sourceTree = "<group>"; };
 		FBFF63161C6707EC0020CE88 /* GameObjectNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObjectNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				C0FF42981C668EE400F42C88 /* Assets.xcassets */,
 				C0FF429A1C668EE400F42C88 /* LaunchScreen.storyboard */,
 				C0FF429D1C668EE400F42C88 /* Info.plist */,
+				FB954BC71C6722880058F429 /* China.wav */,
 				C043E0C21C67159800286ACC /* New */,
 				C03284CC1C66CFF60038109D /* UberJumpGraphics */,
 			);
@@ -194,6 +197,7 @@
 				C0FF42991C668EE400F42C88 /* Assets.xcassets in Resources */,
 				C0FF42971C668EE400F42C88 /* Main.storyboard in Resources */,
 				C043E0C31C67159800286ACC /* New in Resources */,
+				FB954BC81C6722880058F429 /* China.wav in Resources */,
 				C03284CD1C66CFF60038109D /* UberJumpGraphics in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
