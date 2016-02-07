@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C03284C71C66C5280038109D /* UberJumpGraphics in Resources */ = {isa = PBXBuildFile; fileRef = C03284C61C66C5280038109D /* UberJumpGraphics */; };
 		C0FF428E1C668EE400F42C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF428D1C668EE400F42C88 /* AppDelegate.swift */; };
-		C0FF42901C668EE400F42C88 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C0FF428F1C668EE400F42C88 /* GameScene.sks */; };
 		C0FF42921C668EE400F42C88 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF42911C668EE400F42C88 /* GameScene.swift */; };
 		C0FF42941C668EE400F42C88 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF42931C668EE400F42C88 /* GameViewController.swift */; };
 		C0FF42971C668EE400F42C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FF42951C668EE400F42C88 /* Main.storyboard */; };
 		C0FF42991C668EE400F42C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FF42981C668EE400F42C88 /* Assets.xcassets */; };
 		C0FF429C1C668EE400F42C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FF429A1C668EE400F42C88 /* LaunchScreen.storyboard */; };
 		C0FF42A71C668EE400F42C88 /* TrumpJumpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF42A61C668EE400F42C88 /* TrumpJumpTests.swift */; };
+		C0FF42B41C66913400F42C88 /* TrumpJump.app in Resources */ = {isa = PBXBuildFile; fileRef = C0FF428A1C668EE400F42C88 /* TrumpJump.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C03284C61C66C5280038109D /* UberJumpGraphics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UberJumpGraphics; path = ../UberJumpGraphics; sourceTree = "<group>"; };
 		C0FF428A1C668EE400F42C88 /* TrumpJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrumpJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FF428D1C668EE400F42C88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0FF428F1C668EE400F42C88 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		C0FF42911C668EE400F42C88 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		C0FF42931C668EE400F42C88 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C0FF42961C668EE400F42C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,13 +83,13 @@
 			isa = PBXGroup;
 			children = (
 				C0FF428D1C668EE400F42C88 /* AppDelegate.swift */,
-				C0FF428F1C668EE400F42C88 /* GameScene.sks */,
 				C0FF42911C668EE400F42C88 /* GameScene.swift */,
 				C0FF42931C668EE400F42C88 /* GameViewController.swift */,
 				C0FF42951C668EE400F42C88 /* Main.storyboard */,
 				C0FF42981C668EE400F42C88 /* Assets.xcassets */,
 				C0FF429A1C668EE400F42C88 /* LaunchScreen.storyboard */,
 				C0FF429D1C668EE400F42C88 /* Info.plist */,
+				C03284C61C66C5280038109D /* UberJumpGraphics */,
 			);
 			path = TrumpJump;
 			sourceTree = "<group>";
@@ -183,8 +184,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0FF42901C668EE400F42C88 /* GameScene.sks in Resources */,
+				C0FF42B41C66913400F42C88 /* TrumpJump.app in Resources */,
 				C0FF429C1C668EE400F42C88 /* LaunchScreen.storyboard in Resources */,
+				C03284C71C66C5280038109D /* UberJumpGraphics in Resources */,
 				C0FF42991C668EE400F42C88 /* Assets.xcassets in Resources */,
 				C0FF42971C668EE400F42C88 /* Main.storyboard in Resources */,
 			);
@@ -395,6 +397,7 @@
 				C0FF42AD1C668EE400F42C88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0FF42AE1C668EE400F42C88 /* Build configuration list for PBXNativeTarget "TrumpJumpTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +406,7 @@
 				C0FF42B01C668EE400F42C88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
