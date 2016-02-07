@@ -76,7 +76,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         for index in 0...19 {
             // 3
             
-            let node = SKSpriteNode(imageNamed:String(format: "UberJumpGraphics/Backgrounds/Background%02d", index + 1))
+            let node = SKSpriteNode(imageNamed:String(format: "New/Background%02d", index + 1))
             // 4
             node.setScale(scaleFactor)
             node.anchorPoint = CGPoint(x: 0.5, y: 0.0)
