@@ -38,6 +38,7 @@ class StarNode: GameObjectNode {
     let starSound = SKAction.playSoundFileNamed("China.wav", waitForCompletion: false)
     var starType: StarType!
     override func collisionWithPlayer(player: SKNode) -> Bool {
+        
         // Boost the player up
         player.physicsBody?.velocity = CGVector(dx: player.physicsBody!.velocity.dx, dy: 400.0)
         
@@ -45,7 +46,14 @@ class StarNode: GameObjectNode {
         runAction(starSound, completion: {
             // Remove this Star
             self.removeFromParent()
-        })
+        
+            })
+            // Award score
+            GameState.sharedInstance.score += (starType == .Normal ? 20 : 100)
+            
+            // Award stars
+            GameState.sharedInstance.stars += (starType == .Normal ? 1 : 5)
+        
         
         // The HUD needs updating to show the new stars and score
         return true

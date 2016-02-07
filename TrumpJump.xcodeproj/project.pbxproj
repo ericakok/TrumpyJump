@@ -11,6 +11,9 @@
 		C03284C91C66CF450038109D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF42911C668EE400F42C88 /* GameScene.swift */; };
 		C03284CD1C66CFF60038109D /* UberJumpGraphics in Resources */ = {isa = PBXBuildFile; fileRef = C03284CC1C66CFF60038109D /* UberJumpGraphics */; };
 		C043E0C31C67159800286ACC /* New in Resources */ = {isa = PBXBuildFile; fileRef = C043E0C21C67159800286ACC /* New */; };
+		C043E0C51C67344700286ACC /* Level01.plist in Resources */ = {isa = PBXBuildFile; fileRef = C043E0C41C67344700286ACC /* Level01.plist */; };
+		C043E0C71C67377200286ACC /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043E0C61C67377200286ACC /* GameState.swift */; };
+		C043E0C91C673B0600286ACC /* EndGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043E0C81C673B0600286ACC /* EndGameScene.swift */; };
 		C0FF428E1C668EE400F42C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF428D1C668EE400F42C88 /* AppDelegate.swift */; };
 		C0FF42941C668EE400F42C88 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF42931C668EE400F42C88 /* GameViewController.swift */; };
 		C0FF42971C668EE400F42C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FF42951C668EE400F42C88 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* Begin PBXFileReference section */
 		C03284CC1C66CFF60038109D /* UberJumpGraphics */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UberJumpGraphics; sourceTree = "<group>"; };
 		C043E0C21C67159800286ACC /* New */ = {isa = PBXFileReference; lastKnownFileType = folder; path = New; sourceTree = "<group>"; };
+		C043E0C41C67344700286ACC /* Level01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level01.plist; sourceTree = "<group>"; };
+		C043E0C61C67377200286ACC /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		C043E0C81C673B0600286ACC /* EndGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameScene.swift; sourceTree = "<group>"; };
 		C0FF428A1C668EE400F42C88 /* TrumpJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrumpJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FF428D1C668EE400F42C88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0FF42911C668EE400F42C88 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -92,7 +98,10 @@
 				C0FF42911C668EE400F42C88 /* GameScene.swift */,
 				FBFF63161C6707EC0020CE88 /* GameObjectNode.swift */,
 				C0FF42931C668EE400F42C88 /* GameViewController.swift */,
+				C043E0C61C67377200286ACC /* GameState.swift */,
+				C043E0C81C673B0600286ACC /* EndGameScene.swift */,
 				C0FF42951C668EE400F42C88 /* Main.storyboard */,
+				C043E0C41C67344700286ACC /* Level01.plist */,
 				C0FF42981C668EE400F42C88 /* Assets.xcassets */,
 				C0FF429A1C668EE400F42C88 /* LaunchScreen.storyboard */,
 				C0FF429D1C668EE400F42C88 /* Info.plist */,
@@ -162,6 +171,7 @@
 				TargetAttributes = {
 					C0FF42891C668EE400F42C88 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z9D59TFU3J;
 					};
 					C0FF42A11C668EE400F42C88 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -195,6 +205,7 @@
 			files = (
 				C0FF429C1C668EE400F42C88 /* LaunchScreen.storyboard in Resources */,
 				C0FF42991C668EE400F42C88 /* Assets.xcassets in Resources */,
+				C043E0C51C67344700286ACC /* Level01.plist in Resources */,
 				C0FF42971C668EE400F42C88 /* Main.storyboard in Resources */,
 				C043E0C31C67159800286ACC /* New in Resources */,
 				FB954BC81C6722880058F429 /* China.wav in Resources */,
@@ -218,7 +229,9 @@
 			files = (
 				C03284C81C66CF340038109D /* GameScene.swift in Sources */,
 				C0FF42941C668EE400F42C88 /* GameViewController.swift in Sources */,
+				C043E0C71C67377200286ACC /* GameState.swift in Sources */,
 				FBFF63171C6707EC0020CE88 /* GameObjectNode.swift in Sources */,
+				C043E0C91C673B0600286ACC /* EndGameScene.swift in Sources */,
 				C0FF428E1C668EE400F42C88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,10 +360,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TrumpJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TrumpJump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -358,10 +374,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TrumpJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TrumpJump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
