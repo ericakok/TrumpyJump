@@ -55,8 +55,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         tapToStartNode.position = CGPoint(x: self.size.width / 2, y: 180.0)
         hudNode.addChild(tapToStartNode)
         // Add a star
-        let star = createStarAtPosition(CGPoint(x: 160, y: 220))
+        let star = createStarAtPosition(CGPoint(x: 160, y: 220), ofType: .Special)
         foregroundNode.addChild(star)
+        // Add a platform
+        let platform = createPlatformAtPosition(CGPoint(x: 160, y: 320), ofType: .Normal)
+        foregroundNode.addChild(platform)
 
         }
     
@@ -140,7 +143,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         player.physicsBody?.applyImpulse(CGVector(dx: 0.0, dy: 20.0))
     }
     
-    func createStarAtPosition(position: CGPoint) -> StarNode {
+    func createStarAtPosition(position: CGPoint, ofType type: StarType) -> StarNode {
         // 1
         let node = StarNode()
         let thePosition = CGPoint(x: position.x * scaleFactor, y: position.y)
@@ -148,8 +151,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         node.name = "NODE_STAR"
         
         // 2
+        node.starType = type
         var sprite: SKSpriteNode
-        sprite = SKSpriteNode(imageNamed: "UberJumpGraphics/Assets.atlas/Star")
+        if type == .Special {
+            sprite = SKSpriteNode(imageNamed: "UberJumpGraphics/Assets.atlas/StarSpecial")
+        } else {
+            sprite = SKSpriteNode(imageNamed: "UberJumpGraphics/Assets.atlas/Star")
+        }
         node.addChild(sprite)
         
         // 3
@@ -179,6 +187,32 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         if updateHUD {
             // 4 TODO: Update HUD in Part 2
         }
+    }
+    
+    func createPlatformAtPosition(position: CGPoint, ofType type: PlatformType) -> PlatformNode {
+        // 1
+        let node = PlatformNode()
+        let thePosition = CGPoint(x: position.x * scaleFactor, y: position.y)
+        node.position = thePosition
+        node.name = "NODE_PLATFORM"
+        node.platformType = type
+        
+        // 2
+        var sprite: SKSpriteNode
+        if type == .Break {
+            sprite = SKSpriteNode(imageNamed: "UberJumpGraphics/Assets.atlas/PlatformBreak")
+        } else {
+            sprite = SKSpriteNode(imageNamed: "UberJumpGraphics/Assets.atlas/Platform")
+        }
+        node.addChild(sprite)
+        
+        // 3
+        node.physicsBody = SKPhysicsBody(rectangleOfSize: sprite.size)
+        node.physicsBody?.dynamic = false
+        node.physicsBody?.categoryBitMask = CollisionCategoryBitmask.Platform
+        node.physicsBody?.collisionBitMask = 0
+        
+        return node
     }
 
 }
