@@ -16,6 +16,7 @@
 		C0FF42991C668EE400F42C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FF42981C668EE400F42C88 /* Assets.xcassets */; };
 		C0FF429C1C668EE400F42C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FF429A1C668EE400F42C88 /* LaunchScreen.storyboard */; };
 		C0FF42A71C668EE400F42C88 /* TrumpJumpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF42A61C668EE400F42C88 /* TrumpJumpTests.swift */; };
+		FBFF63171C6707EC0020CE88 /* GameObjectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF63161C6707EC0020CE88 /* GameObjectNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		C0FF42A21C668EE400F42C88 /* TrumpJumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrumpJumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FF42A61C668EE400F42C88 /* TrumpJumpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrumpJumpTests.swift; sourceTree = "<group>"; };
 		C0FF42A81C668EE400F42C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBFF63161C6707EC0020CE88 /* GameObjectNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObjectNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				C0FF428D1C668EE400F42C88 /* AppDelegate.swift */,
 				C0FF42911C668EE400F42C88 /* GameScene.swift */,
+				FBFF63161C6707EC0020CE88 /* GameObjectNode.swift */,
 				C0FF42931C668EE400F42C88 /* GameViewController.swift */,
 				C0FF42951C668EE400F42C88 /* Main.storyboard */,
 				C0FF42981C668EE400F42C88 /* Assets.xcassets */,
@@ -207,6 +210,7 @@
 			files = (
 				C03284C81C66CF340038109D /* GameScene.swift in Sources */,
 				C0FF42941C668EE400F42C88 /* GameViewController.swift in Sources */,
+				FBFF63171C6707EC0020CE88 /* GameObjectNode.swift in Sources */,
 				C0FF428E1C668EE400F42C88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
